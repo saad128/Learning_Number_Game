@@ -25,10 +25,8 @@ public class DragSystemScript : MonoBehaviour
     {
         if (finished == false)
         {
-            Debug.Log(finished);
             if (isDragging)
             {
-                Debug.Log(isDragging);
                 Vector3 mousePos;
                 mousePos = Input.mousePosition;
                 mousePos = Camera.main.ScreenToWorldPoint(mousePos);
@@ -43,7 +41,6 @@ public class DragSystemScript : MonoBehaviour
     {
        
 
-            Debug.Log("OnMouseDown");
 
             Vector3 mousePos;
             mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
@@ -76,10 +73,8 @@ public class DragSystemScript : MonoBehaviour
 
             if (GameManager.instance.counter == 3)
             {
-                Debug.Log("Secen Change");
                 
                 GameManager.instance.StartGame(2);
-                //gameManager.counter = 0;
                 
             }
         }

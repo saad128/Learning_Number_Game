@@ -8,7 +8,6 @@ public class SpawnTheNumber : MonoBehaviour
 
     [SerializeField] private List<GameObject> numberPrefabs;
     [SerializeField] private List<GameObject> numberOfObjects;
-    //[SerializeField] public int selectNumber;
     [SerializeField] private int indexOfNumber;
 
 
@@ -25,7 +24,7 @@ public class SpawnTheNumber : MonoBehaviour
         }
 
     }
-   
+
     private void Start()
     {
         SpawnPrefabs();
@@ -67,8 +66,7 @@ public class SpawnTheNumber : MonoBehaviour
                 indexOfNumber = numberPrefabs.IndexOf(item);
             }
         }
-        //Debug.Log("Index" + indexOfNumber);
-        //Debug.Log(numberPrefabs[indexOfNumber].name);
+       
     }
 
     void SpawnSelectedPrefabs()

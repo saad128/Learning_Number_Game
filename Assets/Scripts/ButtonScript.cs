@@ -16,7 +16,6 @@ public class ButtonScript : MonoBehaviour
     {
 
         GameManager.instance.SetNumber(button.GetComponentInChildren<TextMeshProUGUI>().text);
-        //Debug.Log(button.name);
         panelObject.SetActive(false);
         GameManager.instance.StartGame(0);
     }

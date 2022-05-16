@@ -24,13 +24,9 @@ public class DestoryTheNumber : MonoBehaviour
             RaycastHit2D hit = Physics2D.Raycast(mousePosition2D, Vector2.zero);
             if (hit.collider != null)
             {
-                //Debug.Log(hit.collider.name);
-                //Debug.Log("hitted object" + hit.collider.name);
-                //Debug.Log("selected number" + SpawnTheNumber.instance.selectNumber);
+               
                 if (hit.collider.name.StartsWith(GameManager.instance.GetNumber()))
                 {
-                    //Debug.Log(hit.collider.name);
-                    //Debug.Log(GameManager.instance.GetNumber());
                     Destroy(hit.collider.gameObject);
                     GameManager.instance.counter++;
                     if(GameManager.instance.counter == 5)

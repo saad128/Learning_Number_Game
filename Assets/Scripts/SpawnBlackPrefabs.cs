@@ -17,15 +17,11 @@ public class SpawnBlackPrefabs : MonoBehaviour
     {
         foreach (var item in spawnBlackPrefabs)
         {
-            Debug.Log(item.name);
             if (item.name.Contains(GameManager.instance.GetNumber()))
             {
-                Debug.Log(item.name);
-                Debug.Log(GameManager.instance.GetNumber());
                 indexofBlackPrefab = spawnBlackPrefabs.IndexOf(item);
             }
         }
-        Debug.Log(indexofBlackPrefab);
     }
 
     void SpawnSelectedPrefabs()
@@ -39,13 +35,5 @@ public class SpawnBlackPrefabs : MonoBehaviour
     }
 
 
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        Debug.Log("enter the collider body");
-        if (collision.gameObject.CompareTag("ColorPrefabs"))
-        {
-            Debug.Log("collided 5");
-            Destroy(spawnBlackPrefabs[indexofBlackPrefab]);
-        }
-    }
+   
 }

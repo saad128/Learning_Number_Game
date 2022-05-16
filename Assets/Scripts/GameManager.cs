@@ -50,5 +50,4 @@ public class GameManager : MonoBehaviour
          this.chooseLearningNumber = chooseLearningNumber;
     }
 
-
 }
